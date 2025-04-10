@@ -174,13 +174,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202504100252385_Usuarios.cs" />
+    <Compile Include="Migrations\202504100252385_Usuarios.Designer.cs">
+      <DependentUpon>202504100252385_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504100257466_Modelos.cs" />
+    <Compile Include="Migrations\202504100257466_Modelos.Designer.cs">
+      <DependentUpon>202504100257466_Modelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cita.cs" />
     <Compile Include="Models\HistorialMedico.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Mascota.cs" />
-    <Compile Include="Models\PetCareContext.cs" />
+    <Compile Include="Models\TrabajoEnClaseContext.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -286,6 +295,14 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202504100252385_Usuarios.resx">
+      <DependentUpon>202504100252385_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504100257466_Modelos.resx">
+      <DependentUpon>202504100257466_Modelos.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
